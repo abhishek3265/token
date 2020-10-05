@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+    <header>Token some text ss</header>
+  <ul>
+<li><a href="#"><i class="fas fa-qrcode"></i>Create Tokens</a></li>
+<li><a href="#"><i class="fas fa-link"></i>History</a></li>
+</ul>
+</div>
+<section>
+    <h1 class="header">Token </h1>
+   <div class="container">
+     <div class="form-container">
+    <form name="form" action="" class="form1" id="form1">
+        <div class="form-control">     
+        <label for="token-type">Token Type :</label>
+        <select id="token-type" name="type">
+            <option value="type1" selected>type1</option>
+            <option value="type2">type2</option>
+            <option value="type3">type3</option>
+            <option value="type4">type4</option>
+          </select>
+          </div>
+          <div class="form-control "> 
+          <label for="cardId">Card ID :</label>
+          <input type="text" id="cardID"> <i class="fas fa-info-circle "></i><i class="fas fa-check-circle "></i>
+          <small> error</small>            
+        </div>
+        <div class="form-control "> 
+          <label for="aadhaar">Aadhaar Number :</label>
+        <input type="text" id="aadhaar-no"><i class="fas fa-info-circle "></i><i class="fas fa-check-circle "></i>
+        <small> error</small>
+          </div>
+          <div class="form-control">
+            <label for="dates">Check Validity</label>: </label>
+            <input type="date" id="today" class="date-input" min="2020-06-04" >
+                <a  id="dates" class="date-check" onclick="ab()">Check Validity</a>
+                <p id="text"></p>
+            
+          </div>
+        <button type="submit" id="submit-btn">Submit</button>
+    </form>
+    </div>
+    </div>
+</section>
+<footer>
+    <p>CopyRight&COPY;---- 2020</p>
+</footer>
+    <script src="index.js"></script>
+</body>
+</html>
